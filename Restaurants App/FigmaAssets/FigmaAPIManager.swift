@@ -18,10 +18,10 @@ class FigmaAPIManager: ObservableObject {
     }
 
     func fetchFigmaData() {
-        let accessToken = "figd_x6RRfijxrgkdtcx7U-_fNDDbv661rSE1CtRhEe8N" // Replace with your Figma access token
-        let fileKey = "cieUHtlRMwZrrOCuehBjf7" // Extracted from the URL
-        let textStyleNodeId = "305:103" // Node ID for text styles
-        let colorNodeId = "305:110" // Node ID for colors
+        let accessToken = "ACCESS_TOKEN_REQUIRED" // Use your Acccess Token
+        let fileKey = "cieUHtlRMwZrrOCuehBjf7"
+        let textStyleNodeId = "305:103"
+        let colorNodeId = "305:110"
 
         let url = URL(string: "https://api.figma.com/v1/files/\(fileKey)/nodes?ids=\(textStyleNodeId),\(colorNodeId)")!
         var request = URLRequest(url: url)
