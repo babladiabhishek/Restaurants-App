@@ -1,0 +1,19 @@
+included:
+  - Restaurants App
+  - Restaurants AppTests
+  - Restaurants AppUITests
+
+# excluded: # uncomment and add path to directories/files here if they should be excluded
+
+analyzer_rules:
+  - unused_declaration
+  - unused_import
+
+# disabled_rules: # uncomment and add rules that should be ignored, more info here: https://github.com/realm/SwiftLint#rules
+
+strict: false
+
+identifier_name:
+  excluded:
+    - id
+    - URL
