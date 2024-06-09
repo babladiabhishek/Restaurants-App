@@ -37,7 +37,8 @@ struct RestaurantListView: View {
                             )
                         }
                     }
-                    .padding()
+                    .padding(.leading)
+                    .padding(.trailing)
                 }
                 
                 List {

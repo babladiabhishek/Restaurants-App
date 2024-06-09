@@ -67,4 +67,6 @@ struct RestaurantCard: View {
         tags: "Tag • Tag • Tag ",
         time: "30 mins", rating: "3.5"
     )
+    .padding(.leading)
+    .padding(.trailing)
 }
