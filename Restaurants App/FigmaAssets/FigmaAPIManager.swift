@@ -18,7 +18,7 @@ class FigmaAPIManager: ObservableObject {
     }
 
     func fetchFigmaData() {
-        let accessToken = "figd_5KvGuJ_Y28Ldj_oNmokqCh1WzTuwvbr2y9A18IP4" // Use your Acccess Token
+        let accessToken = ""
         let fileKey = "cieUHtlRMwZrrOCuehBjf7"
         let textStyleNodeId = "305:103"
         let colorNodeId = "305:110"
