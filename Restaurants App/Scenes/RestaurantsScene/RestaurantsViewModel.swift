@@ -52,10 +52,10 @@ final class RestaurantsViewModel: ObservableObject {
                 allTagsDict[filterId] = tag
             }
             
-            for index in 0..<fetchedRestaurants.count {
-                let filterIDS = fetchedRestaurants[index].filterIDS
+            for restaurant in 0..<fetchedRestaurants.count {
+                let filterIDS = fetchedRestaurants[restaurant].filterIDS
                 let tags = filterIDS.compactMap { allTagsDict[$0] }
-                fetchedRestaurants[index].tags = tags
+                fetchedRestaurants[restaurant].tags = tags
             }
             
             // Extract unique tags and their images

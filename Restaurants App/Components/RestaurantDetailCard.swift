@@ -12,7 +12,7 @@ struct RestaurantDetailCard: View {
     let cardWidth: CGFloat = .infinity
     let cardHeight: CGFloat = 144
     var data: Restaurant
-    @ObservedObject var viewModel: RestaurantDetailViewModel
+    var viewModel: RestaurantDetailViewModel
 
     var body: some View {
         ScrollView {

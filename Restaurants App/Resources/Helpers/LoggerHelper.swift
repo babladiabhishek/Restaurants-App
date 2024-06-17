@@ -8,7 +8,6 @@
 import Foundation
 import OSLog
 
-
 protocol LogNetworkProtocol {
     func log(_ response: HTTPURLResponse?, data: Data?, error: Error?, HTTPMethod: String?)
 }
@@ -16,45 +15,49 @@ protocol LogNetworkProtocol {
 final class LoggerHelper: LogNetworkProtocol {
 
     static let shared = LoggerHelper()
-
     let ENABLELOG = true
+    private let logger = Logger(subsystem: "umain.code-test.Restaurants-App", category: "Network")
 
     func log(_ response: HTTPURLResponse? = nil, data: Data? = nil, error: Error? = nil, HTTPMethod: String? = nil) {
         guard ENABLELOG else { return }
 
-        print("\n🔵 ========== Start logResponse ========== 🔵")
+        logger.log(level: .info, "========== Start logResponse ========== ")
+
         defer {
-            print("🟦 ========== End logResponse ========== 🟦\n")
+            logger.log(level: .info, "========== End logResponse ========== ")
         }
 
         guard let response = response else {
-            print("==", "❌ NULL Response ERROR: ❌")
+            logger.error("❌ NULL Response ERROR: ❌")
             return
         }
+
         if let url = response.url?.absoluteString {
-            print("==", "Request URL: `\(url)`")
-            print("==", "Response CallBack Status Code: `\(response.statusCode)`")
+            logger.log(level: .info, "Request URL: \(url, privacy: .public)")
+            logger.log(level: .info, "Response CallBack Status Code: \(response.statusCode, privacy: .public)")
         } else {
-            print("==", "❌ LOG ERROR: ❌")
-            print("==", "Empty URL")
+            logger.error("❌ LOG ERROR: ❌: Empty URL")
         }
+
         if let method = HTTPMethod {
-            print("==", "Request HTTPMethod: `\(method)`")
+            logger.log(level: .info, "Request HTTPMethod: \(method, privacy: .public)")
         }
+
         if let error = error {
-            print("==", "❌ GOT URL REQUEST ERROR: ❌")
-            print(error)
+            logger.error("❌ GOT URL REQUEST ERROR: ❌: \(error.localizedDescription, privacy: .public)")
         }
+
         guard let data = data else {
-            print("==", "❌ Empty Response ERROR: ❌")
+            logger.error("❌ Empty Response ERROR: ❌")
             return
         }
-        print("==", "✅ Response CallBack Data: ✅")
+
+        logger.log(level: .info, "✅ Response CallBack Data: ✅")
         if let json = data.prettyPrintedJSONString {
-            print(json)
+            logger.log(level: .info, "\(json, privacy: .public)")
         } else {
             let responseDataString: String = String(data: data, encoding: .utf8) ?? "BAD ENCODING"
-            print(responseDataString)
+            logger.log(level: .info, "\(responseDataString, privacy: .public)")
         }
     }
 }

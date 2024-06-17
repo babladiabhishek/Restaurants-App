@@ -17,7 +17,7 @@ struct RestaurantListView: View {
         NavigationSplitView {
             VStack {
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 10) {
+                    HStack {
                         ForEach(viewModel.tags, id: \.name) { tag in
                             FilterComponent(
                                 isSelected: Binding(
@@ -39,7 +39,7 @@ struct RestaurantListView: View {
                     }
                     .padding()
                 }
-                
+
                 List {
                     ForEach(viewModel.restaurants ?? [], id: \.id) { restaurant in
                         ZStack {
