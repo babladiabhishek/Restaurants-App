@@ -40,7 +40,7 @@ jobs:
         id: set-default-scheme
         run: |
           scheme_list=$(xcodebuild -list -json | tr -d "\n")
-          default_scheme=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
+          default_scheme=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['schemes'][0]")
           echo $default_scheme > default_scheme
           echo "Using default scheme: $default_scheme"
           echo "::set-output name=default_scheme::$default_scheme"
@@ -49,13 +49,13 @@ jobs:
         env:
           DEFAULT_SCHEME: ${{ steps.set-default-scheme.outputs.default_scheme }}
         run: |
-          bundle exec fastlane ios build scheme:$DEFAULT_SCHEME
+          bundle exec fastlane ios build scheme:"${{ steps.set-default-scheme.outputs.default_scheme }}"
 
       - name: Run Fastlane Tests
         env:
           DEFAULT_SCHEME: ${{ steps.set-default-scheme.outputs.default_scheme }}
         run: |
-          bundle exec fastlane ios test scheme:$DEFAULT_SCHEME
+          bundle exec fastlane ios test scheme:"${{ steps.set-default-scheme.outputs.default_scheme }}"
 
       - name: Upload Test Results
         if: failure()
