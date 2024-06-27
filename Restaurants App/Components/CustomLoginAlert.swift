@@ -34,7 +34,7 @@ struct CustomLoginAlert: View {
                     Text(title)
                         .padding(.top, 16)
                         .padding(.horizontal, 16)
-                        .foregroundColor(.buttonPrimaryFill)
+                        .foregroundColor(ColorManager.darkTextColor)
                     
                     Spacer()
                 }
@@ -50,15 +50,15 @@ struct CustomLoginAlert: View {
                     .minimumScaleFactor(AlertConstants.minimumScaleFactor)
                 
                 VStack(spacing: AlertConstants.buttonSpacing) { // Adjusted spacing between buttons to 8px
-                    Button(agreeButtonText, action: agreeButtonAction).padding(.horizontal)
+                    SecondaryButton(labelText: agreeButtonText, action: agreeButtonAction).padding(.horizontal)
                     
-                    Button(disagreeButtonText, action: dismissAlert)
+                    SecondaryButton(labelText: disagreeButtonText, action: dismissAlert)
                         .padding(.horizontal)
                         .padding(.bottom)
                 }
             }
             .frame(width: AlertConstants.maxAlertWidth, height: AlertConstants.maxAlertHeight)
-            .background(Color.white)
+            .background(ColorManager.lightTextColor)
             .cornerRadius(AlertConstants.cornerRadius)
         }
         .zIndex(AlertConstants.alertZIndex)
@@ -74,7 +74,7 @@ struct CustomLoginAlert: View {
 
 struct CustomLoginAlert_Previews: PreviewProvider {
     static var previews: some View {
-        CustomLoginAlert(presentAlert: .constant(true), agreeButtonAction: {}, title: "", bodyText: "", agreeButtonText: "", disagreeButtonText: "")
+        CustomLoginAlert(presentAlert: .constant(true), agreeButtonAction: {}, title: "Alert Name", bodyText: "BodyText", agreeButtonText: "Yes", disagreeButtonText: "No")
             .previewLayout(.sizeThatFits)
     }
 }

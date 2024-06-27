@@ -74,10 +74,10 @@ private enum BottomSheetConstants {
     static let defaultMaxHeight: CGFloat = 300 // The value been chosen based on design requirements, ensuring that the maximum height of the bottom sheet fits well with the overall UI layout
 }
 
-struct WKBottomSheetView_Previews: PreviewProvider {
+struct BottomSheetView_Previews: PreviewProvider {
     static var previews: some View {
         BottomSheet(isOpen: .constant(false)) {
-            Rectangle().fill(Color.green)
+            Rectangle().fill(ColorManager.positiveColor)
         }
         .ignoresSafeArea()
     }

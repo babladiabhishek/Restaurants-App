@@ -28,7 +28,7 @@ struct LoginSheetView: View {
 
                         VStack(alignment: .leading) {
                             Text("Hello")
-                                .foregroundColor(.buttonPrimaryFill)
+                                .foregroundColor(ColorManager.darkTextColor)
                         }
 
                         Spacer()
@@ -44,7 +44,7 @@ struct LoginSheetView: View {
                     })
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .foregroundColor(.buttonPrimaryFill)
+                    .foregroundColor(ColorManager.darkTextColor)
 
                     Divider()
                         .padding(.top, 20)

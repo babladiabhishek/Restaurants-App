@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WKTextField: View {
+struct RATextField: View {
     // MARK: - PROPERTIES
 
     var text: Binding<String>
@@ -28,7 +28,7 @@ struct WKTextField: View {
                     Text(label)
 //                        .font(Font(Theme.currentTheme.title3Font))
                         .textCase(.uppercase)
-                        .foregroundColor(.labelColor)
+                        .foregroundColor(ColorManager.subtitleColor)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
                     TextField(placeholder ?? "", text: text) { changed in
@@ -54,7 +54,7 @@ struct WKTextField: View {
                     .overlay(
                         Divider()
                             .frame(height: 2)
-                            .overlay(Color.notificationRed),
+                            .overlay(ColorManager.negativeColor),
                         alignment: .bottom
                     )
             })
@@ -62,7 +62,7 @@ struct WKTextField: View {
             if case .invalid(let errorMessage) = status {
                 Text(errorMessage)
                     .font(.system(size: 16))
-                    .foregroundColor(.notificationRed)
+                    .foregroundColor(ColorManager.negativeColor)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
@@ -71,12 +71,12 @@ struct WKTextField: View {
 
 // MARK: - PREVIEW
 
-struct WKTextField_Previews: PreviewProvider {
+struct TextField_Previews: PreviewProvider {
     @State static var text: String = ""
     @State static var status: ValidatorResult = .invalid("error_message")
 
     static var previews: some View {
-        WKTextField(
+        RATextField(
             text: $text,
             label: "email",
             placeholder: "email_placeholder",

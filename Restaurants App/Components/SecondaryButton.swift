@@ -13,7 +13,7 @@ struct SecondaryButton: View {
 
     var body: some View {
         Button(action: action) {
-            Text("Hello")
+            Text(labelText)
                 .foregroundStyle(.red)
 //                .font(Font(Theme.currentTheme.title1Font))
                 .frame(maxWidth: .infinity)

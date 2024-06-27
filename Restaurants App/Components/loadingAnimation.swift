@@ -21,7 +21,7 @@ struct loadingAnimation: View {
         if loading == .loading {
             ZStack {
                 Rectangle()
-                    .fill(Color.overlayColor)
+                    .fill(ColorManager.selectedColor)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .ignoresSafeArea()
 

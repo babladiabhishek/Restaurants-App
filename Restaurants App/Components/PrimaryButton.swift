@@ -20,20 +20,20 @@ struct PrimaryButton: View {
         Button(action: action) {
             Text(labelText)
 //                .font(Font(Theme.currentTheme.title1Font))
-                .foregroundColor(isDisabled ? .buttonDisabledPrimaryTitleColor : .buttonPrimaryText)
+                .foregroundColor(isDisabled ? ColorManager.selectedColor : ColorManager.backgroundColor)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 18)
         }
         .disabled(isDisabled)
         .background(
             RoundedRectangle(cornerRadius: 4)
-                .fill(isDisabled ? Color.buttonPrimaryFill.opacity(0.25) : Color.buttonPrimaryFill)
+                .fill(isDisabled ? ColorManager.darkTextColor.opacity(0.25) : ColorManager.darkTextColor)
         )
         .cornerRadius(4)
     }
 }
 
-struct WKMainButton_Previews: PreviewProvider {
+struct MainButton_Previews: PreviewProvider {
     static var previews: some View {
         PrimaryButton(labelText: "click_to_pay_approve_button", isDisabled: true) {
             print("Button clicked")

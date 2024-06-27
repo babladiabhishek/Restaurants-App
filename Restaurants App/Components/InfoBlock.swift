@@ -39,7 +39,7 @@ struct InfoBlock: View {
     InfoBlock(
         icon: "infoIcon",
         text: "some Text",
-        textColor: .buttonPrimaryFill,
+        textColor: ColorManager.darkTextColor,
         backgroundColor: .red,
         cornerRadius: 8
     )

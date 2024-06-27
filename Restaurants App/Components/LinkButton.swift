@@ -38,7 +38,7 @@ struct LinkButton: View {
 
 // MARK: - PREVIEW
 
-struct WKLinkButtonView_Previews: PreviewProvider {
+struct LinkButtonView_Previews: PreviewProvider {
     static var previews: some View {
         LinkButton(
             icon: Image(systemName: "square.and.arrow.up.on.square"),

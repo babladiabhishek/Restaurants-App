@@ -14,7 +14,7 @@ struct MoreInformationView: View {
         VStack(spacing: .zero) {
             Text("Echoes of Eternity: Whispers Across Time")
 //                .font(Font(Theme.currentTheme.title1Font))
-                .foregroundColor(.titleColor)
+                .foregroundColor(ColorManager.darkTextColor)
                 .padding(.vertical, 16)
                 .padding(.top, 16)
 
@@ -28,7 +28,7 @@ struct MoreInformationView: View {
 
             LinkButton(
                 icon: Image(systemName: "square.and.arrow.up.on.square"),
-                color: .buttonPrimaryFill,
+                color: ColorManager.darkTextColor,
                 linkLabel: "Discover the Secrets",
                 linkDestination: "www.google.com"
             )
