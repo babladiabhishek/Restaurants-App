@@ -1,10 +1,6 @@
 //
 //  GenericErrorAlertView.swift
-//  WasaKredit
-//
 //  Created by Abhishek Babladi on 2024-02-02.
-//  Copyright © 2024 Wasa Kredit. All rights reserved.
-//
 
 import Foundation
 import SwiftUI

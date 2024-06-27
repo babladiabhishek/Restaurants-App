@@ -1,10 +1,5 @@
 //
 //  CustomLoginAlert.swift
-//  WasaKredit
-//
-//  Created by Abhishek Babladi on 2024-02-28.
-//  Copyright © 2024 Wasa Kredit. All rights reserved.
-//
 
 import Combine
 import SwiftUI
