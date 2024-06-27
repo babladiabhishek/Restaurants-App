@@ -31,6 +31,7 @@ jobs:
       - name: Install Dependencies
         run: |
           bundle install
+          bundle update fastlane
           if [ -f "Podfile" ]; then
             bundle exec pod install
           fi
