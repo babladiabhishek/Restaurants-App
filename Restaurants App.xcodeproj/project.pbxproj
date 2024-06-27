@@ -47,6 +47,28 @@
 		47649FDB2BFB4F99008CAAB2 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47649FDA2BFB4F99008CAAB2 /* RoundedCorner.swift */; };
 		477A30122BFB830F00B1D884 /* RestaurantDetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A30112BFB830F00B1D884 /* RestaurantDetailViewModelTest.swift */; };
 		477A30142BFB8FC500B1D884 /* MockNetworkAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A30132BFB8FC500B1D884 /* MockNetworkAPIManager.swift */; };
+		47B92F2F2C2D7C2700AE05B3 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F2C2C2D7C2700AE05B3 /* SecondaryButton.swift */; };
+		47B92F302C2D7C2700AE05B3 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F2B2C2D7C2700AE05B3 /* PrimaryButton.swift */; };
+		47B92F312C2D7C2700AE05B3 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F282C2D7C2700AE05B3 /* LinkButton.swift */; };
+		47B92F322C2D7C2700AE05B3 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F2D2C2D7C2700AE05B3 /* SheetView.swift */; };
+		47B92F332C2D7C2700AE05B3 /* InfoBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F272C2D7C2700AE05B3 /* InfoBlock.swift */; };
+		47B92F342C2D7C2700AE05B3 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F2E2C2D7C2700AE05B3 /* TextField.swift */; };
+		47B92F352C2D7C2700AE05B3 /* LottieSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F2A2C2D7C2700AE05B3 /* LottieSwiftUIView.swift */; };
+		47B92F362C2D7C2700AE05B3 /* loadingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F292C2D7C2700AE05B3 /* loadingAnimation.swift */; };
+		47B92F392C2D7C6400AE05B3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 47B92F382C2D7C6400AE05B3 /* Lottie */; };
+		47B92F3C2C2D7CBA00AE05B3 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 47B92F3A2C2D7CBA00AE05B3 /* loading.json */; };
+		47B92F3E2C2D7CDD00AE05B3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F3D2C2D7CDD00AE05B3 /* Colors.swift */; };
+		47B92F402C2D7CF400AE05B3 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F3F2C2D7CF400AE05B3 /* LoadingState.swift */; };
+		47B92F432C2D7D0000AE05B3 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F412C2D7D0000AE05B3 /* Validator.swift */; };
+		47B92F452C2D7D3D00AE05B3 /* MoreInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F442C2D7D3D00AE05B3 /* MoreInformationView.swift */; };
+		47B92F4C2C2D7F3300AE05B3 /* GenericErrorAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F462C2D7F3300AE05B3 /* GenericErrorAlertView.swift */; };
+		47B92F4D2C2D7F3300AE05B3 /* KeyboardHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F472C2D7F3300AE05B3 /* KeyboardHost.swift */; };
+		47B92F4E2C2D7F3300AE05B3 /* View+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F492C2D7F3300AE05B3 /* View+HideKeyboard.swift */; };
+		47B92F502C2D7F3300AE05B3 /* View+IfModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F4A2C2D7F3300AE05B3 /* View+IfModifier.swift */; };
+		47B92F512C2D7F3300AE05B3 /* View+SheetHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F4B2C2D7F3300AE05B3 /* View+SheetHeight.swift */; };
+		47B92F532C2D80DF00AE05B3 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F522C2D80DF00AE05B3 /* BottomSheet.swift */; };
+		47B92F562C2D814100AE05B3 /* LoginSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F552C2D814100AE05B3 /* LoginSheetView.swift */; };
+		47B92F582C2D81E900AE05B3 /* CustomLoginAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B92F572C2D81E900AE05B3 /* CustomLoginAlert.swift */; };
 		47C96B902C05EF580036F76D /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C96B8F2C05EF580036F76D /* AppCoordinatorTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +133,27 @@
 		47649FDA2BFB4F99008CAAB2 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		477A30112BFB830F00B1D884 /* RestaurantDetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewModelTest.swift; sourceTree = "<group>"; };
 		477A30132BFB8FC500B1D884 /* MockNetworkAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkAPIManager.swift; sourceTree = "<group>"; };
+		47B92F272C2D7C2700AE05B3 /* InfoBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBlock.swift; sourceTree = "<group>"; };
+		47B92F282C2D7C2700AE05B3 /* LinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
+		47B92F292C2D7C2700AE05B3 /* loadingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingAnimation.swift; sourceTree = "<group>"; };
+		47B92F2A2C2D7C2700AE05B3 /* LottieSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieSwiftUIView.swift; sourceTree = "<group>"; };
+		47B92F2B2C2D7C2700AE05B3 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		47B92F2C2C2D7C2700AE05B3 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		47B92F2D2C2D7C2700AE05B3 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		47B92F2E2C2D7C2700AE05B3 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		47B92F3A2C2D7CBA00AE05B3 /* loading.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		47B92F3D2C2D7CDD00AE05B3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		47B92F3F2C2D7CF400AE05B3 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		47B92F412C2D7D0000AE05B3 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		47B92F442C2D7D3D00AE05B3 /* MoreInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationView.swift; sourceTree = "<group>"; };
+		47B92F462C2D7F3300AE05B3 /* GenericErrorAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericErrorAlertView.swift; sourceTree = "<group>"; };
+		47B92F472C2D7F3300AE05B3 /* KeyboardHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHost.swift; sourceTree = "<group>"; };
+		47B92F492C2D7F3300AE05B3 /* View+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+HideKeyboard.swift"; sourceTree = "<group>"; };
+		47B92F4A2C2D7F3300AE05B3 /* View+IfModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+IfModifier.swift"; sourceTree = "<group>"; };
+		47B92F4B2C2D7F3300AE05B3 /* View+SheetHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SheetHeight.swift"; sourceTree = "<group>"; };
+		47B92F522C2D80DF00AE05B3 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		47B92F552C2D814100AE05B3 /* LoginSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSheetView.swift; sourceTree = "<group>"; };
+		47B92F572C2D81E900AE05B3 /* CustomLoginAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoginAlert.swift; sourceTree = "<group>"; };
 		47C96B8F2C05EF580036F76D /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47649FC82BFA4440008CAAB2 /* Kingfisher in Frameworks */,
+				47B92F392C2D7C6400AE05B3 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +286,10 @@
 		47649F662BF37747008CAAB2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				47B92F422C2D7D0000AE05B3 /* Validator */,
+				47B92F3F2C2D7CF400AE05B3 /* LoadingState.swift */,
+				47B92F3D2C2D7CDD00AE05B3 /* Colors.swift */,
+				47B92F3B2C2D7CBA00AE05B3 /* Animations */,
 				47649F7F2BF6093A008CAAB2 /* Json */,
 				47649F672BF37754008CAAB2 /* Helpers */,
 			);
@@ -261,6 +309,11 @@
 			children = (
 				47649F6B2BF377A8008CAAB2 /* Data.swift */,
 				47649FDA2BFB4F99008CAAB2 /* RoundedCorner.swift */,
+				47B92F462C2D7F3300AE05B3 /* GenericErrorAlertView.swift */,
+				47B92F472C2D7F3300AE05B3 /* KeyboardHost.swift */,
+				47B92F492C2D7F3300AE05B3 /* View+HideKeyboard.swift */,
+				47B92F4A2C2D7F3300AE05B3 /* View+IfModifier.swift */,
+				47B92F4B2C2D7F3300AE05B3 /* View+SheetHeight.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -268,6 +321,7 @@
 		47649F752BF37F25008CAAB2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				47B92F542C2D812900AE05B3 /* Views */,
 				47649F7E2BF608A2008CAAB2 /* RestaurantsScene */,
 			);
 			path = Scenes;
@@ -300,6 +354,16 @@
 				47649FC02BF9FA0A008CAAB2 /* FilterComponent.swift */,
 				47649FC22BFA0B2C008CAAB2 /* RestaurantCard.swift */,
 				47649FC42BFA12DE008CAAB2 /* RestaurantDetailCard.swift */,
+				47B92F272C2D7C2700AE05B3 /* InfoBlock.swift */,
+				47B92F282C2D7C2700AE05B3 /* LinkButton.swift */,
+				47B92F292C2D7C2700AE05B3 /* loadingAnimation.swift */,
+				47B92F2A2C2D7C2700AE05B3 /* LottieSwiftUIView.swift */,
+				47B92F2B2C2D7C2700AE05B3 /* PrimaryButton.swift */,
+				47B92F2C2C2D7C2700AE05B3 /* SecondaryButton.swift */,
+				47B92F2D2C2D7C2700AE05B3 /* SheetView.swift */,
+				47B92F2E2C2D7C2700AE05B3 /* TextField.swift */,
+				47B92F522C2D80DF00AE05B3 /* BottomSheet.swift */,
+				47B92F572C2D81E900AE05B3 /* CustomLoginAlert.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -316,6 +380,31 @@
 				47649FD82BFB409C008CAAB2 /* StyledTextViews.swift */,
 			);
 			path = FigmaAssets;
+			sourceTree = "<group>";
+		};
+		47B92F3B2C2D7CBA00AE05B3 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				47B92F3A2C2D7CBA00AE05B3 /* loading.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		47B92F422C2D7D0000AE05B3 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				47B92F412C2D7D0000AE05B3 /* Validator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		47B92F542C2D812900AE05B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47B92F442C2D7D3D00AE05B3 /* MoreInformationView.swift */,
+				47B92F552C2D814100AE05B3 /* LoginSheetView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +425,7 @@
 			name = "Restaurants App";
 			packageProductDependencies = (
 				47649FC72BFA4440008CAAB2 /* Kingfisher */,
+				47B92F382C2D7C6400AE05B3 /* Lottie */,
 			);
 			productName = "Restaurants App";
 			productReference = 47649F252BF37289008CAAB2 /* Restaurants App.app */;
@@ -411,6 +501,7 @@
 			mainGroup = 47649F1C2BF37289008CAAB2;
 			packageReferences = (
 				47649FC62BFA4440008CAAB2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				47B92F372C2D7C6400AE05B3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 47649F262BF37289008CAAB2 /* Products */;
 			projectDirPath = "";
@@ -430,6 +521,7 @@
 			files = (
 				47649F312BF3728B008CAAB2 /* Preview Assets.xcassets in Resources */,
 				47649F2D2BF3728B008CAAB2 /* Assets.xcassets in Resources */,
+				47B92F3C2C2D7CBA00AE05B3 /* loading.json in Resources */,
 				47649F812BF60946008CAAB2 /* RestaurantsData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,26 +556,46 @@
 				47649FC12BF9FA0A008CAAB2 /* FilterComponent.swift in Sources */,
 				47649F632BF37615008CAAB2 /* EndPointTarget.swift in Sources */,
 				47649FD92BFB409C008CAAB2 /* StyledTextViews.swift in Sources */,
+				47B92F582C2D81E900AE05B3 /* CustomLoginAlert.swift in Sources */,
+				47B92F2F2C2D7C2700AE05B3 /* SecondaryButton.swift in Sources */,
+				47B92F302C2D7C2700AE05B3 /* PrimaryButton.swift in Sources */,
+				47B92F312C2D7C2700AE05B3 /* LinkButton.swift in Sources */,
+				47B92F322C2D7C2700AE05B3 /* SheetView.swift in Sources */,
+				47B92F332C2D7C2700AE05B3 /* InfoBlock.swift in Sources */,
+				47B92F342C2D7C2700AE05B3 /* TextField.swift in Sources */,
+				47B92F352C2D7C2700AE05B3 /* LottieSwiftUIView.swift in Sources */,
+				47B92F362C2D7C2700AE05B3 /* loadingAnimation.swift in Sources */,
 				47649F612BF375AF008CAAB2 /* AppCoordinatorView.swift in Sources */,
 				47649F7B2BF60853008CAAB2 /* RestaurantRow.swift in Sources */,
 				47649FD12BFB4080008CAAB2 /* ContentView.swift in Sources */,
 				47649F772BF37F3E008CAAB2 /* RestaurantsViewModel.swift in Sources */,
 				47649FCF2BFB4079008CAAB2 /* ColorManager.swift in Sources */,
 				47649F582BF37386008CAAB2 /* OpenStatus.swift in Sources */,
+				47B92F562C2D814100AE05B3 /* LoginSheetView.swift in Sources */,
 				47649FC52BFA12DE008CAAB2 /* RestaurantDetailCard.swift in Sources */,
+				47B92F3E2C2D7CDD00AE05B3 /* Colors.swift in Sources */,
 				47649FCA2BFB2A2C008CAAB2 /* RestaurantDetailViewModel.swift in Sources */,
 				47649FD52BFB408D008CAAB2 /* FigmaModels.swift in Sources */,
 				47649F702BF37875008CAAB2 /* APIService.swift in Sources */,
 				47649F722BF378AD008CAAB2 /* NetworkAPIManager.swift in Sources */,
 				47649F6C2BF377A8008CAAB2 /* Data.swift in Sources */,
 				47649FD72BFB4092008CAAB2 /* RectangleView.swift in Sources */,
+				47B92F432C2D7D0000AE05B3 /* Validator.swift in Sources */,
 				47649F792BF4BB90008CAAB2 /* LoggerHelper.swift in Sources */,
 				47649F7D2BF60866008CAAB2 /* RestaurantDetailView.swift in Sources */,
 				47649F5C2BF3742C008CAAB2 /* Error.swift in Sources */,
 				47649F742BF37931008CAAB2 /* ResultModel.swift in Sources */,
+				47B92F532C2D80DF00AE05B3 /* BottomSheet.swift in Sources */,
 				47649FDB2BFB4F99008CAAB2 /* RoundedCorner.swift in Sources */,
+				47B92F402C2D7CF400AE05B3 /* LoadingState.swift in Sources */,
 				47649FD32BFB4087008CAAB2 /* FigmaAPIManager.swift in Sources */,
 				47649F562BF3732D008CAAB2 /* Restaurant.swift in Sources */,
+				47B92F452C2D7D3D00AE05B3 /* MoreInformationView.swift in Sources */,
+				47B92F4C2C2D7F3300AE05B3 /* GenericErrorAlertView.swift in Sources */,
+				47B92F4D2C2D7F3300AE05B3 /* KeyboardHost.swift in Sources */,
+				47B92F4E2C2D7F3300AE05B3 /* View+HideKeyboard.swift in Sources */,
+				47B92F502C2D7F3300AE05B3 /* View+IfModifier.swift in Sources */,
+				47B92F512C2D7F3300AE05B3 /* View+SheetHeight.swift in Sources */,
 				47649FCD2BFB405D008CAAB2 /* TextStylesManager.swift in Sources */,
 				47649F5F2BF374C6008CAAB2 /* Coordinator.swift in Sources */,
 				477A30142BFB8FC500B1D884 /* MockNetworkAPIManager.swift in Sources */,
@@ -857,6 +969,14 @@
 				minimumVersion = 7.11.0;
 			};
 		};
+		47B92F372C2D7C6400AE05B3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -864,6 +984,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 47649FC62BFA4440008CAAB2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		47B92F382C2D7C6400AE05B3 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47B92F372C2D7C6400AE05B3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
