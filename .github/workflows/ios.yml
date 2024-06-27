@@ -49,13 +49,13 @@ jobs:
         env:
           DEFAULT_SCHEME: ${{ steps.set-default-scheme.outputs.default_scheme }}
         run: |
-          bundle exec fastlane build scheme:$DEFAULT_SCHEME
+          bundle exec fastlane ios build scheme:$DEFAULT_SCHEME
 
       - name: Run Fastlane Tests
         env:
           DEFAULT_SCHEME: ${{ steps.set-default-scheme.outputs.default_scheme }}
         run: |
-          bundle exec fastlane test scheme:$DEFAULT_SCHEME
+          bundle exec fastlane ios test scheme:$DEFAULT_SCHEME
 
       - name: Upload Test Results
         if: failure()
