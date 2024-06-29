@@ -40,7 +40,7 @@ struct RestaurantListView: View {
                     .padding(.leading)
                     .padding(.trailing)
                 }
-
+                
                 List {
                     ForEach(viewModel.restaurants ?? [], id: \.id) { restaurant in
                         ZStack {
@@ -60,6 +60,7 @@ struct RestaurantListView: View {
         } detail: {
             Text("Select a Restaurant")
         }
+        .errorAlert(errorMessage: $viewModel.errorMessage)
     }
 }
 
